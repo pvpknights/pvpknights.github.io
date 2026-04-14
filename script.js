@@ -1,79 +1,64 @@
 let allPlayerData = [];
 
-
 const rankOrder = ["S+", "S", "S-", "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"];
 
 async function init() {
     try {
-
         const response = await fetch('all_players_master.json');
-        allPlayerData = await response.json();
+        const data = await response.json();
         
+        allPlayerData = data.sort((a, b) => {
+            return rankOrder.indexOf(a.rank) - rankOrder.indexOf(b.rank);
+        });
 
-        renderHome(); 
+    
+        showHome();
     } catch (err) {
-        console.error(err);
-        document.getElementById('container').innerHTML = "Error loading player data. Check your JSON format.";
+        console.error("JSON Error:", err);
+        document.getElementById('container').innerHTML = "<p style='text-align:center; color:red;'>Failed to load players. Check your JSON formatting.</p>";
     }
 }
 
+function showHome() {
+    updateUI("THE ELITE", p => p.rank === "S+", 'home-btn');
+}
 
-function renderHome() {
+function showRank(tier) {
+    updateUI(`${tier} TIER`, p => p.rank.startsWith(tier), null, tier);
+}
+
+function updateUI(titleText, filterFn, activeId, tierLetter) {
     const container = document.getElementById('container');
     const title = document.getElementById('origin-title');
+    
     container.innerHTML = '';
-    title.innerText = "THE ELITE";
+    title.innerText = titleText;
 
-    // Filter ONLY S+ members
-    const elite = allPlayerData.filter(p => p.rank === "S+");
+    const filtered = allPlayerData.filter(filterFn);
 
-    if (elite.length === 0) {
-        container.innerHTML = "<p style='text-align:center'>No S+ Knights recorded yet.</p>";
+    if (filtered.length === 0) {
+        container.innerHTML = `<p style="text-align:center; opacity:0.3; margin-top: 50px;">No knights currently in this tier.</p>`;
     } else {
-        displayPlayers(elite);
+        filtered.forEach(p => {
+            const row = document.createElement('div');
+            row.className = 'player-row';
+            row.innerHTML = `
+                <img class="player-avatar" src="https://render.crafty.gg/3d/bust/${p.uuid}?shadow=true" 
+                     onerror="this.src='https://render.crafty.gg/3d/bust/char?shadow=true';">
+                <div class="player-info">
+                    <h3 class="player-name">${p.name}</h3>
+                </div>
+                <div class="rank-badge">${p.rank}</div>
+            `;
+            container.appendChild(row);
+        });
     }
 
-
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    document.getElementById('home-btn').classList.add('active');
-}
-
-
-function renderRankGroup(tierLetter) {
-    const container = document.getElementById('container');
-    const title = document.getElementById('origin-title');
-    container.innerHTML = '';
-    title.innerText = `${tierLetter} TIER`;
-
-
-    let players = allPlayerData.filter(p => p.rank.startsWith(tierLetter));
-
-
-    players.sort((a, b) => {
-        return rankOrder.indexOf(a.rank) - rankOrder.indexOf(b.rank);
-    });
-
-    displayPlayers(players);
 
     document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.innerText.startsWith(tierLetter) && btn.id !== 'home-btn');
-    });
-}
-
-function displayPlayers(playerList) {
-    const container = document.getElementById('container');
-    playerList.forEach(p => {
-        const row = document.createElement('div');
-        row.className = 'player-row';
-        row.innerHTML = `
-            <img class="player-avatar" src="https://render.crafty.gg/3d/bust/${p.uuid}?shadow=true" 
-                 onerror="this.src='https://render.crafty.gg/3d/bust/char?shadow=true';">
-            <div class="player-info">
-                <h3 class="player-name">${p.name}</h3>
-            </div>
-            <div class="rank-badge">${p.rank}</div>
-        `;
-        container.appendChild(row);
+        btn.classList.remove('active');
+        if (activeId && btn.id === activeId) btn.classList.add('active');
+        if (tierLetter && btn.innerText.startsWith(tierLetter) && btn.id !== 'home-btn') btn.classList.add('active');
     });
 }
 
