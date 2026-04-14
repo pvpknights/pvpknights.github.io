@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PvP Knights | Rankings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="origin-title">PVP KNIGHTS</h1>
+        <div class="title-underline"></div>
+        <div class="subtitle">Official Power Rankings</div>
+    </header>
+
+    <nav id="rank-tabs">
+        <button class="tab-btn active" onclick="renderRankGroup('S')">S Tier</button>
+        <button class="tab-btn" onclick="renderRankGroup('A')">A Tier</button>
+        <button class="tab-btn" onclick="renderRankGroup('B')">B Tier</button>
+        <button class="tab-btn" onclick="renderRankGroup('C')">C Tier</button>
+        <button class="tab-btn" onclick="renderRankGroup('D')">D Tier</button>
+        <button class="tab-btn" onclick="renderRankGroup('E')">E Tier</button>
+    </nav>
+
+    <div id="container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
