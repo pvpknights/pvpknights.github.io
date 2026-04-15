@@ -1,7 +1,1488 @@
 [
-  { "name": "Diisu", "uuid": "1d68578a-50a7-496c-aa57-0ec86d789118", "rank": "S" },
-  { "name": "Triplelion", "uuid": "34b0b3f3-874c-4d8a-afa3-85ea864da4c7", "rank": "S+" },
-  { "name": "Playertracker", "uuid": "07dce6d4-cc3b-47d6-a55f-46a0267cde6d", "rank": "A" },
-  { "name": "AprilsThings", "uuid": "afd4becf-ae66-45c8-8006-5d1d88f90cb3", "rank": "C-" },
-  { "name": "Dogwoodwaffles1", "uuid": "03ff0ead-0e2f-4a7a-9ad1-b3c7cac91ed6", "rank": "C-" }
+    {
+        "name": "Diisu",
+        "uuid": "1d68578a-50a7-496c-aa57-0ec86d789118",
+        "rank": "S",
+        "kills": 177,
+        "deaths": 215,
+        "wins": 84,
+        "losses": 218
+    },
+    {
+        "name": "Triplelion",
+        "uuid": "34b0b3f3-874c-4d8a-afa3-85ea864da4c7",
+        "rank": "S+",
+        "kills": 55,
+        "deaths": 28,
+        "wins": 21,
+        "losses": 28
+    },
+    {
+        "name": "Playertracker",
+        "uuid": "07dce6d4-cc3b-47d6-a55f-46a0267cde6d",
+        "rank": "B+",
+        "kills": 103,
+        "deaths": 136,
+        "wins": 70,
+        "losses": 111,
+        "rating": 9.0
+    },
+    {
+        "name": "AprilsThings",
+        "uuid": "afd4becf-ae66-45c8-8006-5d1d88f90cb3",
+        "rank": "C-",
+        "kills": 87,
+        "deaths": 239,
+        "wins": 104,
+        "losses": 194
+    },
+    {
+        "name": "maineral",
+        "uuid": "0855951d-86c0-4e3c-b20a-6f7ea1601703",
+        "rank": "B-",
+        "kills": 39,
+        "deaths": 60,
+        "wins": 34,
+        "losses": 49
+    },
+    {
+        "uuid": "007947a9-ee64-44bb-86d5-8ffc00ff64dc",
+        "rating": 11.0,
+        "wins": 4,
+        "losses": 15,
+        "kills": 17,
+        "deaths": 15,
+        "name": "ResidentMaster",
+        "rank": "A"
+    },
+    {
+        "uuid": "01b60579-27f1-42ea-9139-90721f70dd95",
+        "rating": 6.0,
+        "wins": 50,
+        "losses": 44,
+        "kills": 84,
+        "deaths": 63,
+        "name": "Chaff12",
+        "rank": "C+"
+    },
+    {
+        "uuid": "02ec9d98-f2c0-4221-b2e0-5f7c140ec805",
+        "rating": 6.0,
+        "wins": 36,
+        "losses": 33,
+        "kills": 65,
+        "deaths": 33,
+        "name": "HtoonCrimes",
+        "rank": "C+"
+    },
+    {
+        "uuid": "03ff0ead-0e2f-4a7a-9ad1-b3c7cac91ed6",
+        "rating": 4.0,
+        "wins": 84,
+        "losses": 160,
+        "kills": 174,
+        "deaths": 150,
+        "name": "DogwoodWaffles1",
+        "rank": "C-"
+    },
+    {
+        "uuid": "066f0cc7-86ce-4ab0-9a3b-fb3371d60d44",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "Kazuko_lov",
+        "rank": "E"
+    },
+    {
+        "uuid": "0796bf64-9353-4382-959c-f029ca1d0d17",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "ThatGuyCherry",
+        "rank": "E"
+    },
+    {
+        "uuid": "07fea032-33b1-466d-a80b-ad3863a255ef",
+        "rating": 2.0,
+        "wins": 1,
+        "losses": 1,
+        "kills": 1,
+        "deaths": 2,
+        "name": "Neptsune",
+        "rank": "D"
+    },
+    {
+        "uuid": "0a4a0b5b-d6e9-4a85-be64-1d55cb3f9dba",
+        "rating": 14.0,
+        "wins": 17,
+        "losses": 10,
+        "kills": 47,
+        "deaths": 9,
+        "name": "Oeefer",
+        "rank": "S"
+    },
+    {
+        "uuid": "0a98e321-5c86-4a99-8e20-8faf76ad8c4a",
+        "rating": 7.0,
+        "wins": 12,
+        "losses": 11,
+        "kills": 15,
+        "deaths": 23,
+        "name": "Ninethousand1",
+        "rank": "B-"
+    },
+    {
+        "uuid": "0c216dcc-1a9f-4837-b233-9c85dc53c549",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "Betterilikedogs",
+        "rank": "E"
+    },
+    {
+        "uuid": "12049e28-646e-457d-919b-f30bfcfb3501",
+        "rating": 8.0,
+        "wins": 4,
+        "losses": 16,
+        "kills": 13,
+        "deaths": 30,
+        "name": "Its_Rexi",
+        "rank": "B+"
+    },
+    {
+        "uuid": "12a2577c-7283-4b58-9da0-79c0590551f4",
+        "rating": 0.8,
+        "wins": 10,
+        "losses": 16,
+        "kills": 13,
+        "deaths": 19,
+        "name": "Anix__",
+        "rank": "E"
+    },
+    {
+        "uuid": "13cfb852-5b1b-4b82-a154-9e9abea6e6a8",
+        "rating": 5.0,
+        "wins": 3,
+        "losses": 4,
+        "kills": 0,
+        "deaths": 8,
+        "name": "_OzR_",
+        "rank": "C"
+    },
+    {
+        "uuid": "14bc4e31-1373-4ba8-9969-24e701a6a2f9",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "RyanGamez6901",
+        "rank": "E"
+    },
+    {
+        "uuid": "174ceb3f-5424-41b5-8375-c0999642d233",
+        "rating": 6.0,
+        "wins": 11,
+        "losses": 4,
+        "kills": 27,
+        "deaths": 11,
+        "name": "IFrenchmuch",
+        "rank": "C+"
+    },
+    {
+        "uuid": "1d1cb4b3-9d9b-427e-8099-73e2a1447be2",
+        "rating": 0.9,
+        "wins": 1,
+        "losses": 2,
+        "kills": 0,
+        "deaths": 2,
+        "name": "NotDivine_",
+        "rank": "E"
+    },
+    {
+        "uuid": "1f3e3ed0-d01b-4e2b-a079-f5bd1e664f45",
+        "rating": 15.0,
+        "wins": 16,
+        "losses": 11,
+        "kills": 41,
+        "deaths": 12,
+        "name": "SwordMasterCat",
+        "rank": "S+"
+    },
+    {
+        "uuid": "1f5bb024-d614-4e3a-9ba6-dc572896bce0",
+        "rating": 4.0,
+        "wins": 3,
+        "losses": 7,
+        "kills": 0,
+        "deaths": 16,
+        "name": "King_Unknown05",
+        "rank": "C-"
+    },
+    {
+        "uuid": "234aefbb-b55f-4e20-9cee-f6b6f6fd3ec0",
+        "rating": 6.0,
+        "wins": 30,
+        "losses": 53,
+        "kills": 49,
+        "deaths": 81,
+        "name": "192ms",
+        "rank": "C+"
+    },
+    {
+        "uuid": "2402d1a4-dc63-4191-b59c-0b799bf3e51c",
+        "rating": 4.0,
+        "wins": 12,
+        "losses": 24,
+        "kills": 16,
+        "deaths": 32,
+        "name": "Jayx6",
+        "rank": "C-"
+    },
+    {
+        "uuid": "28297897-58cc-4624-a226-098f3341a3bd",
+        "rating": 12.0,
+        "wins": 2,
+        "losses": 6,
+        "kills": 2,
+        "deaths": 9,
+        "name": "Regional_",
+        "rank": "A+"
+    },
+    {
+        "uuid": "2c1c69a9-ef47-4b69-b02f-9378f255c985",
+        "rating": 3.0,
+        "wins": 45,
+        "losses": 126,
+        "kills": 35,
+        "deaths": 159,
+        "name": "Gozi25",
+        "rank": "D+"
+    },
+    {
+        "uuid": "2dadca9c-bdde-44c7-b32c-b4061b692666",
+        "rating": 1.8,
+        "wins": 0,
+        "losses": 1,
+        "kills": 0,
+        "deaths": 1,
+        "name": "MrJonze",
+        "rank": "D-"
+    },
+    {
+        "uuid": "2ec08032-e2ca-4def-a82c-91fa79e5173a",
+        "rating": 7.0,
+        "wins": 9,
+        "losses": 10,
+        "kills": 16,
+        "deaths": 12,
+        "name": "quietcrafts",
+        "rank": "B-"
+    },
+    {
+        "uuid": "33b24244-7538-4f60-a926-094195b9bb59",
+        "rating": 2.0,
+        "wins": 14,
+        "losses": 22,
+        "kills": 12,
+        "deaths": 32,
+        "name": "AncientCherry",
+        "rank": "D"
+    },
+    {
+        "uuid": "38364b55-a06c-485c-b3cc-462c055010d1",
+        "rating": 8.0,
+        "wins": 4,
+        "losses": 3,
+        "kills": 6,
+        "deaths": 4,
+        "name": "Zerupy",
+        "rank": "B"
+    },
+    {
+        "uuid": "38e9102f-1f2c-44d7-a08d-9e9173334810",
+        "rating": 7.0,
+        "wins": 87,
+        "losses": 128,
+        "kills": 163,
+        "deaths": 134,
+        "name": "ruitsand",
+        "rank": "B-"
+    },
+    {
+        "uuid": "3dd7c152-97fd-4000-ab69-a5fa02a4e6c7",
+        "rating": 4.0,
+        "wins": 50,
+        "losses": 59,
+        "kills": 28,
+        "deaths": 118,
+        "name": "_Syanide",
+        "rank": "C-"
+    },
+    {
+        "uuid": "3f59da4f-bf53-4c80-a05c-cfa500fa5707",
+        "rating": 10.0,
+        "wins": 26,
+        "losses": 27,
+        "kills": 46,
+        "deaths": 40,
+        "name": "Aqu4tic_Air",
+        "rank": "A-"
+    },
+    {
+        "uuid": "40d82caf-0fc6-4326-aa04-5704aff50cb9",
+        "rating": 11.0,
+        "wins": 3,
+        "losses": 7,
+        "kills": 8,
+        "deaths": 9,
+        "name": "Shobbl",
+        "rank": "A"
+    },
+    {
+        "uuid": "468c3acb-045c-4747-97ac-168b86006fe6",
+        "rating": 0.9,
+        "wins": 1,
+        "losses": 1,
+        "kills": 0,
+        "deaths": 2,
+        "name": "ItchyDonutHole65",
+        "rank": "E"
+    },
+    {
+        "uuid": "4bdc46b0-9454-49c9-83c0-573c4540e3f5",
+        "rating": 1.0,
+        "wins": 11,
+        "losses": 12,
+        "kills": 7,
+        "deaths": 18,
+        "name": "Mistync",
+        "rank": "D-"
+    },
+    {
+        "uuid": "4c4d94f7-690e-4df0-8e7c-2faf40b490fe",
+        "rating": 8.0,
+        "wins": 3,
+        "losses": 6,
+        "kills": 10,
+        "deaths": 8,
+        "name": "Molyhydra",
+        "rank": "B"
+    },
+    {
+        "uuid": "4c6cba88-500f-4f5c-b473-a36db1c2686b",
+        "rating": 0.0,
+        "wins": 9,
+        "losses": 11,
+        "kills": 3,
+        "deaths": 33,
+        "name": "Doncraft0",
+        "rank": "E"
+    },
+    {
+        "uuid": "4e42927e-26f4-4903-87b1-5d4f3d0f4663",
+        "rating": 2.0,
+        "wins": 11,
+        "losses": 14,
+        "kills": 5,
+        "deaths": 15,
+        "name": "allthatchelsea",
+        "rank": "D"
+    },
+    {
+        "uuid": "4f106d5c-e277-4dfe-8443-5b6e580572e5",
+        "rating": 3.0,
+        "wins": 14,
+        "losses": 29,
+        "kills": 12,
+        "deaths": 25,
+        "name": "Blaze_Bro",
+        "rank": "D+"
+    },
+    {
+        "uuid": "52dadec7-23f8-4111-95b4-c124d17908bf",
+        "rating": 11.0,
+        "wins": 9,
+        "losses": 27,
+        "kills": 15,
+        "deaths": 15,
+        "name": "Cyphosis",
+        "rank": "A"
+    },
+    {
+        "uuid": "54c89aa4-8b7d-4d51-865e-d97a0de22f34",
+        "rating": 5.0,
+        "wins": 25,
+        "losses": 19,
+        "kills": 23,
+        "deaths": 48,
+        "name": "sidefall",
+        "rank": "C"
+    },
+    {
+        "uuid": "5517722b-4583-4101-98df-898de4b9225b",
+        "rating": 1.0,
+        "wins": 7,
+        "losses": 16,
+        "kills": 2,
+        "deaths": 35,
+        "name": "Corditen",
+        "rank": "D-"
+    },
+    {
+        "uuid": "56a28c5c-69fa-47b1-8c3e-57962755666c",
+        "rating": 2.0,
+        "wins": 3,
+        "losses": 6,
+        "kills": 2,
+        "deaths": 15,
+        "name": "Dowdens",
+        "rank": "D"
+    },
+    {
+        "uuid": "57d6d75c-d0dc-4063-8511-d103d8f51f85",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "AmiAngelX",
+        "rank": "E"
+    },
+    {
+        "uuid": "591dff9b-70cb-41ed-b906-00afb7206a91",
+        "rating": 3.0,
+        "wins": 17,
+        "losses": 10,
+        "kills": 18,
+        "deaths": 18,
+        "name": "Skeke1",
+        "rank": "D+"
+    },
+    {
+        "uuid": "5a6a6f1a-0003-42d7-ab6c-14e8642e9ae6",
+        "rating": 1.0,
+        "wins": 12,
+        "losses": 14,
+        "kills": 6,
+        "deaths": 30,
+        "name": "JRockEagle2",
+        "rank": "D-"
+    },
+    {
+        "uuid": "5bc3d4dd-8147-4e4c-aace-0d82fc4b2f5a",
+        "rating": 3.0,
+        "wins": 13,
+        "losses": 13,
+        "kills": 6,
+        "deaths": 31,
+        "name": "Noviell",
+        "rank": "D+"
+    },
+    {
+        "uuid": "5e788729-63b3-45c8-bc9c-9930bf09678b",
+        "rating": 2.0,
+        "wins": 1,
+        "losses": 3,
+        "kills": 0,
+        "deaths": 12,
+        "name": "Brooke_sun",
+        "rank": "D"
+    },
+    {
+        "uuid": "5fa230f8-b612-431e-a83c-6b62a8f7e7f3",
+        "rating": 7.0,
+        "wins": 4,
+        "losses": 12,
+        "kills": 10,
+        "deaths": 7,
+        "name": "Dbrooky",
+        "rank": "B-"
+    },
+    {
+        "uuid": "6034b6e0-7bd7-4542-b7ec-9f830eed43f5",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "atlas_glitch",
+        "rank": "E"
+    },
+    {
+        "uuid": "60fd5df2-8bdf-4772-9e9a-cd4be3ac76f2",
+        "rating": 6.0,
+        "wins": 0,
+        "losses": 3,
+        "kills": 0,
+        "deaths": 4,
+        "name": "ThunderUnderline",
+        "rank": "C+"
+    },
+    {
+        "uuid": "66ad9bc2-ab23-47d0-abc3-d752bcad3e14",
+        "rating": 5.0,
+        "wins": 30,
+        "losses": 47,
+        "kills": 29,
+        "deaths": 96,
+        "name": "MushedPeas",
+        "rank": "C"
+    },
+    {
+        "uuid": "6748465b-f75a-4373-97c5-1958310d18e4",
+        "rating": 14.0,
+        "wins": 17,
+        "losses": 18,
+        "kills": 44,
+        "deaths": 16,
+        "name": "Baanab",
+        "rank": "S"
+    },
+    {
+        "uuid": "6bb14b20-bd7c-43f0-a4d7-ffbca80bba4f",
+        "rating": 5.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "AMP3",
+        "rank": "C"
+    },
+    {
+        "uuid": "6c54fdfd-ee1d-4e44-b03e-ff550a1251b5",
+        "rating": 0.0,
+        "wins": 16,
+        "losses": 25,
+        "kills": 1,
+        "deaths": 50,
+        "name": "Ravuni6",
+        "rank": "E"
+    },
+    {
+        "uuid": "6d0a0d1c-fb22-432b-8737-d323de49a6bd",
+        "rating": 10.0,
+        "wins": 2,
+        "losses": 5,
+        "kills": 6,
+        "deaths": 6,
+        "name": "CleanGrass",
+        "rank": "A-"
+    },
+    {
+        "uuid": "7173c20d-cef0-487b-9bb7-ce9d6f6ae8fe",
+        "rating": 7.0,
+        "wins": 48,
+        "losses": 56,
+        "kills": 85,
+        "deaths": 79,
+        "name": "embercind",
+        "rank": "B-"
+    },
+    {
+        "uuid": "7410c224-ca17-4e0f-9728-e1a4d9ad8396",
+        "rating": 2.0,
+        "wins": 18,
+        "losses": 39,
+        "kills": 10,
+        "deaths": 53,
+        "name": "hallowi",
+        "rank": "D"
+    },
+    {
+        "uuid": "75502d4c-bb95-4dea-b3c0-cb3a13ae5fee",
+        "rating": 8.0,
+        "wins": 57,
+        "losses": 81,
+        "kills": 75,
+        "deaths": 173,
+        "name": "Devidur",
+        "rank": "B"
+    },
+    {
+        "uuid": "759c8dbc-99d2-4737-b20c-83d8268b7d03",
+        "rating": 2.0,
+        "wins": 16,
+        "losses": 13,
+        "kills": 10,
+        "deaths": 28,
+        "name": "MaZReD",
+        "rank": "D"
+    },
+    {
+        "uuid": "75fd206a-1539-4d20-a574-41ec1cf1a819",
+        "rating": 0.3,
+        "wins": 0,
+        "losses": 2,
+        "kills": 0,
+        "deaths": 0,
+        "name": "eme3333",
+        "rank": "E"
+    },
+    {
+        "uuid": "76209b11-765a-40b3-9809-bb10e10d77c9",
+        "rating": 4.0,
+        "wins": 32,
+        "losses": 84,
+        "kills": 41,
+        "deaths": 123,
+        "name": "Indo_Comrade",
+        "rank": "C-"
+    },
+    {
+        "uuid": "76a0e0c0-8499-4139-9e24-e6f721aa10fc",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "Sockol",
+        "rank": "E"
+    },
+    {
+        "uuid": "7b248eda-7319-4301-beb2-7f2fac5aee58",
+        "rating": 0.6,
+        "wins": 0,
+        "losses": 1,
+        "kills": 0,
+        "deaths": 1,
+        "name": "NearlyAvery",
+        "rank": "E"
+    },
+    {
+        "uuid": "7b3fabc9-84e1-4995-9cca-a53b1c8d92f5",
+        "rating": 6.0,
+        "wins": 38,
+        "losses": 47,
+        "kills": 56,
+        "deaths": 81,
+        "name": "Iryth",
+        "rank": "C+"
+    },
+    {
+        "uuid": "7c52511c-cb21-4486-807f-900197ee6f8a",
+        "rating": 8.0,
+        "wins": 47,
+        "losses": 49,
+        "kills": 99,
+        "deaths": 56,
+        "name": "Qalius",
+        "rank": "B"
+    },
+    {
+        "uuid": "807bf97e-5c71-44f4-af8a-646f01e1675a",
+        "rating": 5.0,
+        "wins": 19,
+        "losses": 57,
+        "kills": 38,
+        "deaths": 54,
+        "name": "PGNP",
+        "rank": "C"
+    },
+    {
+        "uuid": "80cfe648-44b0-4cb1-beaf-6e623d9e9952",
+        "rating": 0.0,
+        "wins": 12,
+        "losses": 5,
+        "kills": 4,
+        "deaths": 28,
+        "name": "Oreo435",
+        "rank": "E"
+    },
+    {
+        "uuid": "81d53d8a-d7a9-4fc4-a2f6-55632a97b741",
+        "rating": 3.0,
+        "wins": 21,
+        "losses": 24,
+        "kills": 12,
+        "deaths": 33,
+        "name": "NarrowFlare",
+        "rank": "D+"
+    },
+    {
+        "uuid": "85629f80-b4b7-4426-a85d-8370e9f9fb36",
+        "rating": 0.5,
+        "wins": 65,
+        "losses": 93,
+        "kills": 31,
+        "deaths": 115,
+        "name": "superjuliox4",
+        "rank": "E"
+    },
+    {
+        "uuid": "85ed4475-531c-4caa-9e35-883a18e6ff32",
+        "rating": 6.0,
+        "wins": 30,
+        "losses": 55,
+        "kills": 47,
+        "deaths": 55,
+        "name": "Fr0tsey",
+        "rank": "C+"
+    },
+    {
+        "uuid": "8604ddfe-900d-4ba3-b1ae-2e568a3f5d3b",
+        "rating": 5.0,
+        "wins": 8,
+        "losses": 3,
+        "kills": 3,
+        "deaths": 4,
+        "name": "Skeeeees",
+        "rank": "C"
+    },
+    {
+        "uuid": "87743bf5-f0f4-4e8f-ae5a-898fc54d4d09",
+        "rating": 7.0,
+        "wins": 40,
+        "losses": 22,
+        "kills": 54,
+        "deaths": 55,
+        "name": "Vastova",
+        "rank": "B-"
+    },
+    {
+        "uuid": "87864838-46c4-4a05-b815-021077f8cccf",
+        "rating": 8.0,
+        "wins": 63,
+        "losses": 74,
+        "kills": 102,
+        "deaths": 85,
+        "name": "SMILE_PLAYER",
+        "rank": "B"
+    },
+    {
+        "uuid": "8790dceb-4fd4-4495-adc6-133ca9c3fbcb",
+        "rating": 3.0,
+        "wins": 64,
+        "losses": 112,
+        "kills": 34,
+        "deaths": 147,
+        "name": "SignaJay",
+        "rank": "D+"
+    },
+    {
+        "uuid": "8c30dbee-fbef-4e30-ae09-284cf0ad6426",
+        "rating": 3.0,
+        "wins": 9,
+        "losses": 7,
+        "kills": 10,
+        "deaths": 24,
+        "name": "Pixelsz_",
+        "rank": "D+"
+    },
+    {
+        "uuid": "8ee71853-05bd-4e53-8ded-cb0b0cf40ff6",
+        "rating": 7.0,
+        "wins": 48,
+        "losses": 78,
+        "kills": 83,
+        "deaths": 92,
+        "name": "baconcheesellama",
+        "rank": "B-"
+    },
+    {
+        "uuid": "8fffbad2-283f-4465-94f7-802228526be8",
+        "rating": 9.0,
+        "wins": 104,
+        "losses": 149,
+        "kills": 233,
+        "deaths": 185,
+        "name": "yogibearr_",
+        "rank": "B+"
+    },
+    {
+        "uuid": "90bbdb2e-cab4-4196-a8ef-dc2f71b2b40d",
+        "rating": 3.0,
+        "wins": 31,
+        "losses": 84,
+        "kills": 13,
+        "deaths": 119,
+        "name": "OuchMyEgo",
+        "rank": "D+"
+    },
+    {
+        "uuid": "90f62e62-b0bd-4ce7-bc52-daf3bce7d44f",
+        "rating": 7.0,
+        "wins": 68,
+        "losses": 130,
+        "kills": 126,
+        "deaths": 117,
+        "name": "AJChaos_",
+        "rank": "B-"
+    },
+    {
+        "uuid": "92401f56-2541-4f02-b7f9-07810979e6fa",
+        "rating": 7.0,
+        "wins": 15,
+        "losses": 42,
+        "kills": 37,
+        "deaths": 55,
+        "name": "SonnyD__",
+        "rank": "B-"
+    },
+    {
+        "uuid": "93a15d1e-d80a-4983-b789-c6f8ba17e5a9",
+        "rating": 0.0,
+        "wins": 4,
+        "losses": 4,
+        "kills": 1,
+        "deaths": 10,
+        "name": "ekul8456",
+        "rank": "E"
+    },
+    {
+        "uuid": "93ab2328-62dc-47c1-8414-a6b6b9a56b47",
+        "rating": 1.0,
+        "wins": 2,
+        "losses": 7,
+        "kills": 0,
+        "deaths": 11,
+        "name": "mzahara",
+        "rank": "D-"
+    },
+    {
+        "uuid": "95307286-976a-41a7-bdc0-e8d0cb9acc8a",
+        "rating": 2.0,
+        "wins": 26,
+        "losses": 46,
+        "kills": 19,
+        "deaths": 46,
+        "name": "xqinox_",
+        "rank": "D"
+    },
+    {
+        "uuid": "969d5433-b60c-4767-add9-ca0ce0f66d56",
+        "rating": 8.0,
+        "wins": 10,
+        "losses": 41,
+        "kills": 32,
+        "deaths": 86,
+        "name": "bluuur",
+        "rank": "B"
+    },
+    {
+        "uuid": "96c5ebb1-45ac-4969-ae95-0612bb1092b5",
+        "rating": 7.0,
+        "wins": 42,
+        "losses": 52,
+        "kills": 50,
+        "deaths": 90,
+        "name": "boxxx1",
+        "rank": "B-"
+    },
+    {
+        "uuid": "97601364-8222-4253-bb48-7d79deac9337",
+        "rating": 8.0,
+        "wins": 2,
+        "losses": 0,
+        "kills": 1,
+        "deaths": 0,
+        "name": "TsundereBakaa",
+        "rank": "B"
+    },
+    {
+        "uuid": "9a5c1db7-e996-49e4-8c91-bd68411f879c",
+        "rating": 0.0,
+        "wins": 3,
+        "losses": 1,
+        "kills": 3,
+        "deaths": 14,
+        "name": "AwesomeJett44",
+        "rank": "E"
+    },
+    {
+        "uuid": "9dbb06bc-723d-42d9-bab9-1abc6eb70a5c",
+        "rating": 14.0,
+        "wins": 58,
+        "losses": 88,
+        "kills": 105,
+        "deaths": 117,
+        "name": "Pillarger",
+        "rank": "S"
+    },
+    {
+        "uuid": "9dd656cb-2534-435c-a147-3cd53d59248e",
+        "rating": 9.0,
+        "wins": 26,
+        "losses": 18,
+        "kills": 60,
+        "deaths": 24,
+        "name": "PufferBucket",
+        "rank": "B+"
+    },
+    {
+        "uuid": "9e12f906-9d8a-4599-9343-624230758285",
+        "rating": 3.0,
+        "wins": 98,
+        "losses": 181,
+        "kills": 19,
+        "deaths": 257,
+        "name": "staarie",
+        "rank": "D+"
+    },
+    {
+        "uuid": "9f28d36c-6865-4a7c-b79b-b47faefb7b0f",
+        "rating": 3.0,
+        "wins": 17,
+        "losses": 23,
+        "kills": 7,
+        "deaths": 76,
+        "name": "xplode_",
+        "rank": "D+"
+    },
+    {
+        "uuid": "9fa40eb4-4ab0-4290-adc5-010f945605bb",
+        "rating": 1.0,
+        "wins": 4,
+        "losses": 12,
+        "kills": 0,
+        "deaths": 23,
+        "name": "Elizzari",
+        "rank": "D-"
+    },
+    {
+        "uuid": "a4d39225-f101-46be-b4a4-38c634116f06",
+        "rating": 2.0,
+        "wins": 20,
+        "losses": 15,
+        "kills": 15,
+        "deaths": 16,
+        "name": "_ZeeXe_",
+        "rank": "D"
+    },
+    {
+        "uuid": "ac5cbcff-c9f8-4e91-8fd2-f997039ad01c",
+        "rating": 4.0,
+        "wins": 3,
+        "losses": 2,
+        "kills": 3,
+        "deaths": 5,
+        "name": "ImAbroom",
+        "rank": "C-"
+    },
+    {
+        "uuid": "b0962062-d6db-4f3a-bb1f-b3edc732d7e0",
+        "rating": 0.5,
+        "wins": 9,
+        "losses": 34,
+        "kills": 7,
+        "deaths": 28,
+        "name": "hallowo",
+        "rank": "E"
+    },
+    {
+        "uuid": "b1e9ca50-e54c-4e7e-b19e-c6c12d394d87",
+        "rating": 1.0,
+        "wins": 3,
+        "losses": 8,
+        "kills": 2,
+        "deaths": 18,
+        "name": "Madlaf",
+        "rank": "D-"
+    },
+    {
+        "uuid": "b3c919f1-9bee-49e2-8e15-54ded1167245",
+        "rating": 9.0,
+        "wins": 13,
+        "losses": 17,
+        "kills": 24,
+        "deaths": 21,
+        "name": "mvtro",
+        "rank": "B+"
+    },
+    {
+        "uuid": "b43a6229-b048-496f-bb54-9040b51faa15",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "Zephire830",
+        "rank": "E"
+    },
+    {
+        "uuid": "b472928b-11b4-4fd3-9341-fac118871574",
+        "rating": 4.0,
+        "wins": 20,
+        "losses": 59,
+        "kills": 24,
+        "deaths": 60,
+        "name": "FrumSpac3",
+        "rank": "C-"
+    },
+    {
+        "uuid": "b52fa5d4-470d-449d-9d93-f46d4d15bf87",
+        "rating": 5.0,
+        "wins": 5,
+        "losses": 4,
+        "kills": 4,
+        "deaths": 8,
+        "name": "aiAssassinx",
+        "rank": "C"
+    },
+    {
+        "uuid": "b5520ebc-4271-4293-ad9a-9a10cc46f63d",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "FishBarterer",
+        "rank": "E"
+    },
+    {
+        "uuid": "b5b3c639-d531-408d-90f6-f39546972db5",
+        "rating": 5.0,
+        "wins": 49,
+        "losses": 77,
+        "kills": 50,
+        "deaths": 154,
+        "name": "Bee1Boo",
+        "rank": "C"
+    },
+    {
+        "uuid": "b65845c1-f5b4-4b30-ba75-95dd74940aba",
+        "rating": 10.0,
+        "wins": 12,
+        "losses": 18,
+        "kills": 30,
+        "deaths": 28,
+        "name": "Clutchinton",
+        "rank": "A-"
+    },
+    {
+        "uuid": "b70837cf-fd28-414c-b059-f83dd3bb9956",
+        "rating": 14.0,
+        "wins": 21,
+        "losses": 65,
+        "kills": 75,
+        "deaths": 65,
+        "name": "CrystalFang",
+        "rank": "S"
+    },
+    {
+        "uuid": "b901212f-6f3f-4027-b892-659b4a956554",
+        "rating": 8.0,
+        "wins": 16,
+        "losses": 28,
+        "kills": 20,
+        "deaths": 30,
+        "name": "_Hen3",
+        "rank": "B"
+    },
+    {
+        "uuid": "b9839b47-4216-4aeb-a559-6d911fe64a19",
+        "rating": 10.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "Sarni",
+        "rank": "A-"
+    },
+    {
+        "uuid": "badabdbb-26b6-491e-8271-8a509faf8baf",
+        "rating": 8.0,
+        "wins": 17,
+        "losses": 25,
+        "kills": 36,
+        "deaths": 54,
+        "name": "RoyalDuck3",
+        "rank": "B"
+    },
+    {
+        "uuid": "bbb8d921-408b-43f1-9706-c1250b09dc8f",
+        "rating": 5.0,
+        "wins": 47,
+        "losses": 79,
+        "kills": 72,
+        "deaths": 118,
+        "name": "Shieif",
+        "rank": "C"
+    },
+    {
+        "uuid": "bc6c7720-559a-4da5-8428-0f4a856a994d",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "WooIen",
+        "rank": "E"
+    },
+    {
+        "uuid": "bef01379-c045-4ba4-aa4a-2c5d15f91331",
+        "rating": 4.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 4,
+        "name": "IronFistDude200",
+        "rank": "C-"
+    },
+    {
+        "uuid": "bf5bfac6-d300-4085-8d1d-aef2747d54f6",
+        "rating": 6.0,
+        "wins": 4,
+        "losses": 18,
+        "kills": 10,
+        "deaths": 28,
+        "name": "CptSquidy",
+        "rank": "C+"
+    },
+    {
+        "uuid": "c0ffac4e-f23d-4197-9f06-2f2d97452a12",
+        "rating": 6.0,
+        "wins": 3,
+        "losses": 15,
+        "kills": 2,
+        "deaths": 19,
+        "name": "Henrikque",
+        "rank": "C+"
+    },
+    {
+        "uuid": "c36e9033-27b1-4847-959f-8fe006f22ef3",
+        "rating": 0.0,
+        "wins": 5,
+        "losses": 5,
+        "kills": 1,
+        "deaths": 8,
+        "name": "whoT0Tcares",
+        "rank": "E"
+    },
+    {
+        "uuid": "c3b72201-45c4-4088-80b7-be6512f04133",
+        "rating": 2.0,
+        "wins": 12,
+        "losses": 13,
+        "kills": 4,
+        "deaths": 21,
+        "name": "lawvil",
+        "rank": "D"
+    },
+    {
+        "uuid": "c3bc990b-3430-4368-b412-d13b4579747c",
+        "rating": 8.0,
+        "wins": 3,
+        "losses": 9,
+        "kills": 7,
+        "deaths": 16,
+        "name": "kqwd",
+        "rank": "B"
+    },
+    {
+        "uuid": "c455229d-5094-4077-9654-743941b279a2",
+        "rating": 0.5,
+        "wins": 9,
+        "losses": 7,
+        "kills": 5,
+        "deaths": 8,
+        "name": "Sapphyc",
+        "rank": "E"
+    },
+    {
+        "uuid": "c6c25b6b-6b16-4d5c-9ea3-e2b84e8df394",
+        "rating": 0.4,
+        "wins": 1,
+        "losses": 2,
+        "kills": 1,
+        "deaths": 2,
+        "name": "grasslandia",
+        "rank": "E"
+    },
+    {
+        "uuid": "c9cc92ae-ff04-452f-bbee-8b341c291b6e",
+        "rating": 9.0,
+        "wins": 9,
+        "losses": 5,
+        "kills": 13,
+        "deaths": 6,
+        "name": "Eddie3k",
+        "rank": "B+"
+    },
+    {
+        "uuid": "cb50d0f8-2a20-404a-8993-eb4d83022e9b",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "ArcusBread",
+        "rank": "E"
+    },
+    {
+        "uuid": "cd18c3ed-353e-45ff-9939-c129e68d0d80",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "casualplyr268",
+        "rank": "E"
+    },
+    {
+        "uuid": "d0ec5b83-6843-4c9e-a914-8dce1f61c1b4",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "NatteettaN",
+        "rank": "E"
+    },
+    {
+        "uuid": "d112329c-b063-4baa-9714-189e260a8b0a",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "Rotamis",
+        "rank": "E"
+    },
+    {
+        "uuid": "d11f425e-11f5-404b-8a8b-9022b4f2c2eb",
+        "rating": 9.0,
+        "wins": 53,
+        "losses": 96,
+        "kills": 64,
+        "deaths": 122,
+        "name": "SleepyToons",
+        "rank": "B+"
+    },
+    {
+        "uuid": "d24dc7bc-adb8-4928-80e2-eccd4628e952",
+        "rating": 0.9,
+        "wins": 0,
+        "losses": 1,
+        "kills": 0,
+        "deaths": 0,
+        "name": "QuadrupleLion",
+        "rank": "E"
+    },
+    {
+        "uuid": "d263e1c4-7796-40a5-b4d3-edd0dbaf9e41",
+        "rating": 4.0,
+        "wins": 29,
+        "losses": 56,
+        "kills": 48,
+        "deaths": 84,
+        "name": "Phasmi",
+        "rank": "C-"
+    },
+    {
+        "uuid": "d37076a8-0dcf-4db6-a49d-42afeadd1136",
+        "rating": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "kills": 0,
+        "deaths": 0,
+        "name": "Epoql",
+        "rank": "E"
+    },
+    {
+        "uuid": "d5463b26-cabd-4736-aaf3-83fc7d466463",
+        "rating": 0.5,
+        "wins": 43,
+        "losses": 86,
+        "kills": 19,
+        "deaths": 94,
+        "name": "Nooveeaa",
+        "rank": "E"
+    },
+    {
+        "uuid": "d570e00d-9f6b-4b88-98d1-b90d16f7cea8",
+        "rating": 2.0,
+        "wins": 45,
+        "losses": 36,
+        "kills": 32,
+        "deaths": 43,
+        "name": "Flubo_",
+        "rank": "D"
+    },
+    {
+        "uuid": "d6691c98-88e6-4988-b9e2-968f7189293b",
+        "rating": 5.0,
+        "wins": 17,
+        "losses": 19,
+        "kills": 12,
+        "deaths": 51,
+        "name": "RedoshDB8",
+        "rank": "C"
+    },
+    {
+        "uuid": "d67b7962-15d1-40e6-abfa-3a78a558ebf1",
+        "rating": 3.0,
+        "wins": 17,
+        "losses": 42,
+        "kills": 20,
+        "deaths": 57,
+        "name": "Grm101",
+        "rank": "D+"
+    },
+    {
+        "uuid": "d7b02e93-f29c-407e-a746-84d6a6e48d2d",
+        "rating": 0.0,
+        "wins": 1,
+        "losses": 0,
+        "kills": 2,
+        "deaths": 0,
+        "name": "ShadowPather659",
+        "rank": "E"
+    },
+    {
+        "uuid": "d8ccc0f2-55c5-4f87-88cf-5398878d08f6",
+        "rating": 6.0,
+        "wins": 25,
+        "losses": 38,
+        "kills": 41,
+        "deaths": 72,
+        "name": "Zinclly",
+        "rank": "C+"
+    },
+    {
+        "uuid": "da52ad94-32f3-477a-b8d7-7f157c6f28fb",
+        "rating": 5.0,
+        "wins": 6,
+        "losses": 9,
+        "kills": 7,
+        "deaths": 14,
+        "name": "haileyvyy",
+        "rank": "C"
+    },
+    {
+        "uuid": "dd7a8163-b067-4835-9c57-e35740adbbaf",
+        "rating": 11.0,
+        "wins": 6,
+        "losses": 4,
+        "kills": 8,
+        "deaths": 4,
+        "name": "nextanyahu",
+        "rank": "A"
+    },
+    {
+        "uuid": "df4282fd-191c-4358-8897-8434bcca1484",
+        "rating": 8.0,
+        "wins": 3,
+        "losses": 5,
+        "kills": 5,
+        "deaths": 4,
+        "name": "HereNothing",
+        "rank": "B"
+    },
+    {
+        "uuid": "df90ef1d-35af-490d-8ab6-e79d8bb3ba12",
+        "rating": 6.0,
+        "wins": 9,
+        "losses": 18,
+        "kills": 13,
+        "deaths": 30,
+        "name": "Borpgor",
+        "rank": "C+"
+    },
+    {
+        "uuid": "e05f72b2-c786-4dda-ab81-58c90302e9ae",
+        "rating": 3.0,
+        "wins": 2,
+        "losses": 4,
+        "kills": 0,
+        "deaths": 7,
+        "name": "Grennnnn",
+        "rank": "D+"
+    },
+    {
+        "uuid": "e3619bee-bf34-43f2-be9d-2fd330b0e86f",
+        "rating": 4.0,
+        "wins": 1,
+        "losses": 2,
+        "kills": 1,
+        "deaths": 6,
+        "name": "Jqde_",
+        "rank": "C-"
+    },
+    {
+        "uuid": "e3b64b67-f31a-4b03-9069-e46a459b473b",
+        "rating": 14.0,
+        "wins": 4,
+        "losses": 9,
+        "kills": 14,
+        "deaths": 8,
+        "name": "ImMixed",
+        "rank": "S"
+    },
+    {
+        "uuid": "e4672a95-89b9-4645-ab03-ca7642edbe9f",
+        "rating": 7.0,
+        "wins": 0,
+        "losses": 6,
+        "kills": 0,
+        "deaths": 9,
+        "name": "N_ez",
+        "rank": "B-"
+    },
+    {
+        "uuid": "e63422c6-87b7-41c9-9913-2dd9ac7c0986",
+        "rating": 9.0,
+        "wins": 12,
+        "losses": 4,
+        "kills": 18,
+        "deaths": 10,
+        "name": "Spxirit",
+        "rank": "B+"
+    },
+    {
+        "uuid": "ede89a2c-4d0b-4469-a1a6-662196724ca8",
+        "rating": 0.5,
+        "wins": 2,
+        "losses": 12,
+        "kills": 4,
+        "deaths": 7,
+        "name": "JennyPrice",
+        "rank": "E"
+    },
+    {
+        "uuid": "eed550e0-f832-46e5-8f9e-424f27093e2c",
+        "rating": 3.0,
+        "wins": 18,
+        "losses": 21,
+        "kills": 19,
+        "deaths": 24,
+        "name": "BadRexx",
+        "rank": "D+"
+    },
+    {
+        "uuid": "f4ecf735-ff79-493d-97d5-80a055e3d7c1",
+        "rating": 5.0,
+        "wins": 6,
+        "losses": 9,
+        "kills": 4,
+        "deaths": 17,
+        "name": "EternityHasDrip",
+        "rank": "C"
+    },
+    {
+        "uuid": "fd78d4ef-d037-4bf0-aff0-736cee89971c",
+        "rating": 10.0,
+        "wins": 19,
+        "losses": 17,
+        "kills": 24,
+        "deaths": 20,
+        "name": "nnexty",
+        "rank": "A-"
+    },
+    {
+        "uuid": "fe85caea-1a80-4c40-a115-175658d81e8c",
+        "rating": 6.0,
+        "wins": 1,
+        "losses": 1,
+        "kills": 5,
+        "deaths": 3,
+        "name": "Worlow87",
+        "rank": "C+"
+    }
 ]

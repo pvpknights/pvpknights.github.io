@@ -11,18 +11,23 @@
     <header>
         <h1 id="origin-title">PVP KNIGHTS</h1>
         <div class="title-underline"></div>
-        <div class="subtitle">Official Power Rankings</div>
+        <div class="subtitle">Official Rankings</div>
     </header>
 
     <nav id="rank-tabs">
-        <button id="home-btn" class="tab-btn active" onclick="showHome()">Home</button>
-        <button id="info-btn" class="tab-btn" onclick="showRatings()">Ratings</button>
-        <button class="tab-btn" onclick="showRank('S')">S Tier</button>
-        <button class="tab-btn" onclick="showRank('A')">A Tier</button>
-        <button class="tab-btn" onclick="showRank('B')">B Tier</button>
-        <button class="tab-btn" onclick="showRank('C')">C Tier</button>
-        <button class="tab-btn" onclick="showRank('D')">D Tier</button>
-        <button class="tab-btn" onclick="showRank('E')">E Tier</button>
+        <div class="nav-left">
+            <button id="home-btn" class="tab-btn active" onclick="showHome()">Home</button>
+            <button id="info-btn" class="tab-btn" onclick="showRatings()">Ratings Explained</button>
+            <button class="tab-btn" onclick="showRank('S')">S</button>
+            <button class="tab-btn" onclick="showRank('A')">A</button>
+            <button class="tab-btn" onclick="showRank('B')">B</button>
+            <button class="tab-btn" onclick="showRank('C')">C</button>
+            <button class="tab-btn" onclick="showRank('D')">D</button>
+            <button class="tab-btn" onclick="showRank('E')">Unrated</button>
+        </div>
+        <div class="nav-right">
+            <input type="text" id="playerSearch" placeholder="Search Knight..." oninput="handleSearch()">
+        </div>
     </nav>
 
     <div id="container"></div>

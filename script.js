@@ -1,84 +1,119 @@
 let allPlayerData = [];
-
 const rankOrder = ["S+", "S", "S-", "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"];
 
 async function init() {
     try {
+        // Adding a timestamp prevents the browser from loading a cached version of the JSON
         const response = await fetch('all_players_master.json');
         const data = await response.json();
         
-        allPlayerData = data.sort((a, b) => {
-            return rankOrder.indexOf(a.rank) - rankOrder.indexOf(b.rank);
-        });
-
+        // Ensure data is an array before sorting
+        allPlayerData = Array.isArray(data) ? data : [];
+        allPlayerData.sort((a, b) => rankOrder.indexOf(a.rank) - rankOrder.indexOf(b.rank));
+        
         showHome();
     } catch (err) {
-        console.error("JSON Error:", err);
-        document.getElementById('container').innerHTML = "<p style='text-align:center;'>Error loading data.</p>";
+        console.error("Failed to load player data:", err);
+        document.getElementById('container').innerHTML = "Error loading data. Check console for details.";
     }
 }
 
 function showHome() {
-    updateUI("THE ELITE", p => p.rank === "S+", 'home-btn');
+    document.body.className = ""; 
+    updateUI("The Knights of Honor", p => p.rank === "S+", 'home-btn');
 }
 
 function showRank(tier) {
-    updateUI(`${tier} TIER`, p => p.rank.startsWith(tier), null, tier);
+    document.body.className = `theme-${tier.toLowerCase()}`;
+    let displayTitle = (tier === 'E') ? "UNRATED" : `${tier} TIER`;
+    updateUI(displayTitle, p => p.rank && p.rank.startsWith(tier));
 }
 
 function showRatings() {
+    document.body.className = "";
     const container = document.getElementById('container');
     const title = document.getElementById('origin-title');
-    container.innerHTML = '';
-    title.innerText = "RATING GUIDE";
-
-    const infoCard = document.createElement('div');
-    infoCard.className = 'info-card';
-    infoCard.innerHTML = `
-        <h2>Tier Explanations</h2>
-        <div class="rating-item"><b>S+:</b> Absolute dominance. Mastered all mechanics.</div>
-        <div class="rating-item"><b>S:</b> Expert combatants. A threat to everyone.</div>
-        <div class="rating-item"><b>A:</b> Advanced game sense and performance.</div>
-        <div class="rating-item"><b>B:</b> Competent fighters. Solid understanding.</div>
-        <div class="rating-item"><b>C:</b> Average skill. Still honing tactics.</div>
-        <div class="rating-item"><b>D:</b> Novice level. Learning the ropes.</div>
-        <div class="rating-item"><b>E:</b> Recruit. The starting rank.</div>
+    container.innerHTML = `
+        <div class="explanation-card">
+            <div class="tier-desc"><b>S+ Tier:</b> lowk hacking.</div>
+            <div class="tier-desc"><b>S Tier:</b> lerning how to tbot.</div>
+            <div class="tier-desc"><b>A Tier:</b> these guys will ddos you mid fight.</div>
+            <div class="tier-desc"><b>B Tier:</b> scripting 100%.</div>
+            <div class="tier-desc"><b>C Tier:</b> average civ pvper.</div>
+            <div class="tier-desc"><b>D Tier:</b> New Players.</div>
+            <div class="tier-desc"><b>Unrated:</b> Players not yet officially tiered.</div>
+        </div>
     `;
-    container.appendChild(infoCard);
-
+    title.innerText = "RATINGS EXPLAINED";
     document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
     document.getElementById('info-btn').classList.add('active');
 }
 
-function updateUI(titleText, filterFn, activeId, tierLetter) {
+function handleSearch() {
+    document.body.className = "";
+    const query = document.getElementById('playerSearch').value.toLowerCase();
+    updateUI("SEARCH RESULTS", p => p.name && p.name.toLowerCase().includes(query));
+}
+
+function updateUI(titleText, filterFn, activeId) {
     const container = document.getElementById('container');
     const title = document.getElementById('origin-title');
     container.innerHTML = '';
     title.innerText = titleText;
 
     const filtered = allPlayerData.filter(filterFn);
-
+    
     if (filtered.length === 0) {
-        container.innerHTML = `<p style="text-align:center; opacity:0.3; margin-top:50px;">No members found.</p>`;
+        container.innerHTML = `<p style="text-align:center; opacity:0.5; margin-top:50px;">No knights found.</p>`;
     } else {
-        filtered.forEach(p => {
+        filtered.forEach((p, index) => {
+            // IMPORTANT: If your JSON uses capital letters like "Kills", change these to p.Kills
+            const k = p.kills || 0;
+            const d = p.deaths || 0;
+            const w = p.wins || 0;
+            const l = p.losses || 0;
+
+            const kClass = k > d ? 'stat-pos' : (k < d ? 'stat-neg' : '');
+            const dClass = d > k ? 'stat-pos' : (d < k ? 'stat-neg' : '');
+            const wClass = w > l ? 'stat-pos' : (w < l ? 'stat-neg' : '');
+            const lClass = l > w ? 'stat-pos' : (l < w ? 'stat-neg' : '');
+
             const row = document.createElement('div');
             row.className = 'player-row';
+            row.style.animationDelay = `${index * 0.05}s`;
             row.innerHTML = `
                 <img class="player-avatar" src="https://render.crafty.gg/3d/bust/${p.uuid}?shadow=true" 
                      onerror="this.src='https://render.crafty.gg/3d/bust/char?shadow=true';">
-                <div class="player-info"><h3 class="player-name">${p.name}</h3></div>
-                <div class="rank-badge">${p.rank}</div>
+                <div class="player-info">
+                    <h3 class="player-name">${p.name || 'Unknown'}</h3>
+                    <div class="player-stats">
+                        <div class="stat-item"><b>Kills:</b> <span class="stat-value ${kClass}">${k}</span></div>
+                        <div class="stat-item"><b>Deaths:</b> <span class="stat-value ${dClass}">${d}</span></div>
+                        <div class="stat-item"><b>Wins:</b> <span class="stat-value ${wClass}">${w}</span></div>
+                        <div class="stat-item"><b>Losses:</b> <span class="stat-value ${lClass}">${l}</span></div>
+                    </div>
+                </div>
+                <div class="rank-badge">${p.rank || 'N/A'}</div>
             `;
             container.appendChild(row);
         });
     }
 
+    // Tab Highlighting Logic
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.classList.remove('active');
-        if (activeId && btn.id === activeId) btn.classList.add('active');
-        if (tierLetter && btn.innerText.startsWith(tierLetter) && btn.id !== 'home-btn' && btn.id !== 'info-btn') btn.classList.add('active');
+        const btnText = btn.innerText.toUpperCase();
+        const currentTitle = titleText.toUpperCase();
+
+        if (activeId && btn.id === activeId) {
+            btn.classList.add('active');
+        } else if (currentTitle === `${btnText} TIER` || (currentTitle === "UNRATED" && btnText === "UNRATED")) {
+            btn.classList.add('active');
+        } else if (currentTitle === "THE KNIGHTS OF HONOR" && btn.id === 'home-btn') {
+            btn.classList.add('active');
+        }
     });
 }
 
+// Start the application
 init();
