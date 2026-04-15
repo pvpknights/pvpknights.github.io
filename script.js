@@ -3,11 +3,11 @@ const rankOrder = ["S+", "S", "S-", "A+", "A", "A-", "B+", "B", "B-", "C+", "C",
 
 async function init() {
     try {
-        // Adding a timestamp prevents the browser from loading a cached version of the JSON
+        
         const response = await fetch('all_players_master.json');
         const data = await response.json();
         
-        // Ensure data is an array before sorting
+        
         allPlayerData = Array.isArray(data) ? data : [];
         allPlayerData.sort((a, b) => rankOrder.indexOf(a.rank) - rankOrder.indexOf(b.rank));
         
@@ -35,12 +35,12 @@ function showRatings() {
     const title = document.getElementById('origin-title');
     container.innerHTML = `
         <div class="explanation-card">
-            <div class="tier-desc"><b>S+ Tier:</b> lowk hacking.</div>
-            <div class="tier-desc"><b>S Tier:</b> lerning how to tbot.</div>
-            <div class="tier-desc"><b>A Tier:</b> these guys will ddos you mid fight.</div>
-            <div class="tier-desc"><b>B Tier:</b> scripting 100%.</div>
-            <div class="tier-desc"><b>C Tier:</b> average civ pvper.</div>
-            <div class="tier-desc"><b>D Tier:</b> New Players.</div>
+            <div class="tier-desc"><b>S+ Tier:</b> To be updated.</div>
+            <div class="tier-desc"><b>S Tier:</b> To be updated.</div>
+            <div class="tier-desc"><b>A Tier:</b> To be updated.</div>
+            <div class="tier-desc"><b>B Tier:</b> To be updated.</div>
+            <div class="tier-desc"><b>C Tier:</b> To be updated.</div>
+            <div class="tier-desc"><b>D Tier:</b> To be updated.</div>
             <div class="tier-desc"><b>Unrated:</b> Players not yet officially tiered.</div>
         </div>
     `;
@@ -67,7 +67,7 @@ function updateUI(titleText, filterFn, activeId) {
         container.innerHTML = `<p style="text-align:center; opacity:0.5; margin-top:50px;">No knights found.</p>`;
     } else {
         filtered.forEach((p, index) => {
-            // IMPORTANT: If your JSON uses capital letters like "Kills", change these to p.Kills
+           
             const k = p.kills || 0;
             const d = p.deaths || 0;
             const w = p.wins || 0;
@@ -99,7 +99,7 @@ function updateUI(titleText, filterFn, activeId) {
         });
     }
 
-    // Tab Highlighting Logic
+  
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.classList.remove('active');
         const btnText = btn.innerText.toUpperCase();
@@ -115,5 +115,5 @@ function updateUI(titleText, filterFn, activeId) {
     });
 }
 
-// Start the application
+
 init();
