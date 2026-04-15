@@ -42,7 +42,7 @@ def main():
     else:
         all_players = []
 
-    # Create a quick-lookup dictionary for existing players
+  
     player_dict = {p['uuid']: p for p in all_players}
 
     print("Connecting to database API...")
@@ -60,7 +60,7 @@ def main():
         uuid = api_player['uuid']
         api_rating = api_player.get('rating', 0)
 
-        # CASE 1: UUID doesn't exist in our JSON
+       
         if uuid not in player_dict:
             print(f"[{i}/{total_players}] New player found ({uuid}). Querying Mojang...")
             name = get_username(uuid)
@@ -70,14 +70,13 @@ def main():
                 all_players.append(api_player)
                 updated = True
                 print(f"   -> Added: {name}")
-                time.sleep(1.0) # Mojang rate limit protection
+                time.sleep(1.0) 
             continue
 
-        # CASE 2: UUID exists - check if data actually changed
+    
         local_player = player_dict[uuid]
         
-        # We compare the API rating against our stored rating
-        # If stats or rating are different, we update
+       
         if local_player.get('rating') != api_rating:
             print(f"[{i}/{total_players}] Update detected for {local_player.get('name')}")
             local_player['rating'] = api_rating
@@ -88,8 +87,7 @@ def main():
             local_player['losses'] = api_player.get('losses', 0)
             updated = True
         else:
-            # CASE 3: Exists and nothing changed
-            # We do nothing and skip to the next player
+            
             pass
 
     if updated:
