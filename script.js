@@ -3,10 +3,8 @@ const rankOrder = ["S+", "S", "S-", "A+", "A", "A-", "B+", "B", "B-", "C+", "C",
 
 async function init() {
     try {
-        
-        const response = await fetch('all_players_master.json');
+        const response = await fetch('all_players_master.json?v=' + Date.now());
         const data = await response.json();
-        
         
         allPlayerData = Array.isArray(data) ? data : [];
         allPlayerData.sort((a, b) => rankOrder.indexOf(a.rank) - rankOrder.indexOf(b.rank));
@@ -14,7 +12,7 @@ async function init() {
         showHome();
     } catch (err) {
         console.error("Failed to load player data:", err);
-        document.getElementById('container').innerHTML = "Error loading data. Check console for details.";
+        document.getElementById('container').innerHTML = "Error loading data.";
     }
 }
 
@@ -35,13 +33,13 @@ function showRatings() {
     const title = document.getElementById('origin-title');
     container.innerHTML = `
         <div class="explanation-card">
-            <div class="tier-desc"><b>S+ Tier:</b> To be updated.</div>
-            <div class="tier-desc"><b>S Tier:</b> To be updated.</div>
-            <div class="tier-desc"><b>A Tier:</b> To be updated.</div>
-            <div class="tier-desc"><b>B Tier:</b> To be updated.</div>
-            <div class="tier-desc"><b>C Tier:</b> To be updated.</div>
-            <div class="tier-desc"><b>D Tier:</b> To be updated.</div>
-            <div class="tier-desc"><b>Unrated:</b> Players not yet officially tiered.</div>
+            <div class="tier-desc"><b>S+ Tier:</b> To be Updated</div>
+            <div class="tier-desc"><b>S Tier:</b> To be Updated</div>
+            <div class="tier-desc"><b>A Tier:</b> To be Updated</div>
+            <div class="tier-desc"><b>B Tier:</b> To be Updated</div>
+            <div class="tier-desc"><b>C Tier:</b> To be Updated</div>
+            <div class="tier-desc"><b>D Tier:</b> To be Updated</div>
+            <div class="tier-desc"><b>Unrated:</b> We lowk haven't rated them..</div>
         </div>
     `;
     title.innerText = "RATINGS EXPLAINED";
@@ -67,16 +65,16 @@ function updateUI(titleText, filterFn, activeId) {
         container.innerHTML = `<p style="text-align:center; opacity:0.5; margin-top:50px;">No knights found.</p>`;
     } else {
         filtered.forEach((p, index) => {
-           
             const k = p.kills || 0;
             const d = p.deaths || 0;
             const w = p.wins || 0;
             const l = p.losses || 0;
+            
+            const kdVal = d > 0 ? (k / d) : k;
+            const wlVal = l > 0 ? (w / l) : w;
 
-            const kClass = k > d ? 'stat-pos' : (k < d ? 'stat-neg' : '');
-            const dClass = d > k ? 'stat-pos' : (d < k ? 'stat-neg' : '');
-            const wClass = w > l ? 'stat-pos' : (w < l ? 'stat-neg' : '');
-            const lClass = l > w ? 'stat-pos' : (l < w ? 'stat-neg' : '');
+            const kdClass = kdVal >= 1 ? 'kills-text' : 'deaths-text';
+            const wlClass = wlVal >= 1 ? 'kills-text' : 'deaths-text';
 
             const row = document.createElement('div');
             row.className = 'player-row';
@@ -87,10 +85,12 @@ function updateUI(titleText, filterFn, activeId) {
                 <div class="player-info">
                     <h3 class="player-name">${p.name || 'Unknown'}</h3>
                     <div class="player-stats">
-                        <div class="stat-item"><b>Kills:</b> <span class="stat-value ${kClass}">${k}</span></div>
-                        <div class="stat-item"><b>Deaths:</b> <span class="stat-value ${dClass}">${d}</span></div>
-                        <div class="stat-item"><b>Wins:</b> <span class="stat-value ${wClass}">${w}</span></div>
-                        <div class="stat-item"><b>Losses:</b> <span class="stat-value ${lClass}">${l}</span></div>
+                        <div class="stat-item"><b>Kills:</b> <span class="stat-value kills-text">${k}</span></div>
+                        <div class="stat-item"><b>Deaths:</b> <span class="stat-value deaths-text">${d}</span></div>
+                        <div class="stat-item"><b>K/D:</b> <span class="stat-value ${kdClass}">${kdVal.toFixed(2)}</span></div>
+                        <div class="stat-item"><b>Wins:</b> <span class="stat-value wins-text">${w}</span></div>
+                        <div class="stat-item"><b>Losses:</b> <span class="stat-value losses-text">${l}</span></div>
+                        <div class="stat-item"><b>W/L:</b> <span class="stat-value ${wlClass}">${wlVal.toFixed(2)}</span></div>
                     </div>
                 </div>
                 <div class="rank-badge">${p.rank || 'N/A'}</div>
@@ -99,7 +99,6 @@ function updateUI(titleText, filterFn, activeId) {
         });
     }
 
-  
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.classList.remove('active');
         const btnText = btn.innerText.toUpperCase();
@@ -114,6 +113,5 @@ function updateUI(titleText, filterFn, activeId) {
         }
     });
 }
-
 
 init();
